@@ -19,7 +19,7 @@ function guess(letter) {
   if(isCorrect){
     console.log("Congrats! You've correctly guessed a letter.");
     console.log(guessedLetters.join(""));
-    if(!moreToGuess){     
+    if(!moreToGuess){     //moreToGuess seems to be true as I get prompted to try again; it should be false though as I did not change the original value
       console.log("You won!");
     }
     else {
