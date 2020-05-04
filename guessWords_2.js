@@ -16,7 +16,7 @@ function guess(letter) {
       moreToGuess=true;
     }
   }
-  if(isCorrect&&guessedLetters.join("")==givenLetters.join("")) {
+  if(isCorrect&&guessedLetters.join("")==givenLetters.join("")) {   //if the user guessed correctly AND the string resulting from joining given letters and guessed letters are the same, i.e. "learn" = "learn", change the value of moreToGuess to false and print a success message to the console.
     moreToGuess=false;
     console.log(guessedLetters.join(""));
     console.log("You won!"); }
